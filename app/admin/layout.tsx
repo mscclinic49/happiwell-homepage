@@ -1,7 +1,21 @@
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
+import { createClient } from '@/lib/supabase'
 import AdminLogout from './_components/AdminLogout'
 
-export default function AdminLayout({ children }: { children: React.ReactNode }) {
+export default async function AdminLayout({ children }: { children: React.ReactNode }) {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+
+  if (!user) {
+    redirect('/admin/login')
+  }
+
+  const { data: isAdmin } = await supabase.rpc('is_admin')
+  if (!isAdmin) {
+    redirect('/admin/login?error=unauthorized')
+  }
+
   return (
     <div style={{ minHeight: '100vh', background: '#f5f7fa', fontFamily: 'system-ui, sans-serif' }}>
       <nav style={{
