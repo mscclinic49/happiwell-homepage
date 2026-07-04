@@ -299,10 +299,10 @@ export default function HomePage() {
       <h2>แวะมาหาเราได้เลย</h2>
     </div>
     <div className="contact-grid">
-      <div className="map-box" style={{padding: '0', overflow: 'hidden'}}>
+      <div className="map-box" style={{padding: '0', overflow: 'hidden', alignItems: 'stretch'}}>
         <iframe
           src="https://www.google.com/maps?q=13.648962,100.4964886&z=16&output=embed"
-          width="100%" height="320" style={{border: '0', display: 'block'}}
+          width="100%" style={{border: '0', display: 'block', flex: '1', minHeight: '320px'}}
           loading="lazy" referrerPolicy="no-referrer-when-downgrade"
           title="แผนที่ HappiWell คลินิกเวชกรรม">
         </iframe>
