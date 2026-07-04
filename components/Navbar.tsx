@@ -32,12 +32,12 @@ export default function Navbar() {
             style={{ borderRadius: '11px' }}
           />
           <span style={{
-            fontFamily: "'Anuphan', sans-serif",
+            fontFamily: "var(--font-anuphan), 'Anuphan', sans-serif",
             fontWeight: 700,
             fontSize: '18px',
             color: 'var(--hw-mint-900)',
           }}>
-            HappiWell <span style={{ color: 'var(--hw-apricot-600)' }}>Clinic</span>
+            Happi<span style={{ color: 'var(--hw-apricot-600)' }}>Well</span> Clinic
           </span>
         </div>
 

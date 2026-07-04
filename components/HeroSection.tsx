@@ -47,7 +47,7 @@ export default function HeroSection() {
           </div>
 
           <h1 style={{
-            fontFamily: "'Anuphan', 'IBM Plex Sans Thai', sans-serif",
+            fontFamily: "var(--font-anuphan), 'Anuphan', 'IBM Plex Sans Thai', sans-serif",
             fontSize: '40px',
             fontWeight: 700,
             color: 'var(--hw-mint-900)',
@@ -203,18 +203,18 @@ export default function HeroSection() {
             </h3>
             <table style={{ width: '100%', fontSize: '14px', marginTop: '14px', borderCollapse: 'collapse' }}>
               <tbody>
-                {HOURS_ROWS.map((row) => (
+                {HOURS_ROWS.map((row, index) => (
                   <tr key={row.day}>
                     <td style={{
                       padding: '7px 0',
-                      borderTop: '1px solid var(--hw-line)',
+                      borderTop: index === 0 ? 'none' : '1px solid var(--hw-line)',
                       color: 'var(--hw-ink-soft)',
                     }}>
                       {row.label}
                     </td>
                     <td style={{
                       padding: '7px 0',
-                      borderTop: '1px solid var(--hw-line)',
+                      borderTop: index === 0 ? 'none' : '1px solid var(--hw-line)',
                       textAlign: 'right',
                       fontWeight: 600,
                       color: 'var(--hw-ink)',
