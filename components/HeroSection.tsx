@@ -90,11 +90,32 @@ export default function HeroSection() {
               <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              โทรนัดหมาย
+              02-000-4586
             </a>
 
             <a
-              href={bookingUrl}
+              href="tel:0886837899"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                fontWeight: 600,
+                fontSize: '15px',
+                padding: '12px 22px',
+                borderRadius: '999px',
+                background: 'var(--hw-surface)',
+                color: 'var(--hw-mint-900)',
+                border: '1px solid var(--hw-mint-600)',
+              }}
+            >
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="var(--hw-mint-600)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" /><line x1="12" y1="18" x2="12" y2="18" strokeWidth="3" />
+              </svg>
+              088-683-7899
+            </a>
+
+            <a
+              href="https://line.me/R/ti/p/@p49clinic"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -113,7 +134,7 @@ export default function HeroSection() {
               <svg viewBox="0 0 24 24" width="17" height="17" fill="#fff">
                 <circle cx="12" cy="12" r="12" />
               </svg>
-              แชทผ่าน LINE
+              LINE @p49clinic
             </a>
 
             <a

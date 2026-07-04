@@ -31,6 +31,13 @@ export default function Footer() {
             </span>
           </div>
 
+          {/* Contact info */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '14px', color: 'var(--hw-mint-200)' }}>
+            <a href="tel:0220004586" style={{ color: 'var(--hw-mint-100)', fontWeight: 600 }}>☎ 02-000-4586</a>
+            <a href="tel:0886837899" style={{ color: 'var(--hw-mint-100)', fontWeight: 600 }}>📱 088-683-7899</a>
+            <a href="https://line.me/R/ti/p/@p49clinic" target="_blank" rel="noopener noreferrer" style={{ color: '#06C755', fontWeight: 600 }}>LINE @p49clinic</a>
+          </div>
+
           {/* Social links */}
           <div style={{ display: 'flex', gap: '10px' }}>
             <a
@@ -60,7 +67,9 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://line.me/R/ti/p/@p49clinic"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LINE แฮปปี้เวลล์ คลินิก"
               style={{
                 width: '36px', height: '36px', borderRadius: '50%',

@@ -57,27 +57,45 @@ export default function Navbar() {
         </div>
 
         {/* CTA */}
-        <a
-          href={bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            background: 'var(--hw-line-green)',
-            color: '#fff',
-            fontWeight: 600,
-            fontSize: '14px',
-            padding: '9px 18px',
-            borderRadius: '999px',
-          }}
-        >
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="#fff">
-            <circle cx="12" cy="12" r="12" />
-          </svg>
-          แชท LINE
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <a
+            href="tel:0886837899"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              color: 'var(--hw-mint-900)',
+              fontWeight: 600,
+              fontSize: '14px',
+              padding: '9px 16px',
+              borderRadius: '999px',
+              border: '1px solid var(--hw-line)',
+            }}
+          >
+            088-683-7899
+          </a>
+          <a
+            href="https://line.me/R/ti/p/@p49clinic"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              background: 'var(--hw-line-green)',
+              color: '#fff',
+              fontWeight: 600,
+              fontSize: '14px',
+              padding: '9px 18px',
+              borderRadius: '999px',
+            }}
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#fff">
+              <circle cx="12" cy="12" r="12" />
+            </svg>
+            LINE @p49clinic
+          </a>
+        </div>
       </nav>
     </header>
   )
