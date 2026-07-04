@@ -22,7 +22,7 @@ export default function Footer() {
               style={{ borderRadius: '9px' }}
             />
             <span style={{
-              fontFamily: "'Anuphan', sans-serif",
+              fontFamily: "var(--font-anuphan), 'Anuphan', sans-serif",
               fontWeight: 700,
               color: '#fff',
               fontSize: '16px',

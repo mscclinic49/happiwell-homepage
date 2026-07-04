@@ -17,7 +17,7 @@ const services: ServiceCard[] = [
   {
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--hw-mint-700)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2v6M9 5h6" /><path d="M7 8h10l-1 12a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2L7 8z" />
+        <line x1="4" y1="21" x2="9.9" y2="14.2" /><line x1="9.9" y1="14.2" x2="11.41" y2="14.45" /><line x1="9.9" y1="14.2" x2="9.45" y2="12.75" /><line x1="11.41" y1="14.45" x2="16.13" y2="9.01" /><line x1="9.45" y1="12.75" x2="14.17" y2="7.31" /><line x1="14.17" y1="7.31" x2="16.13" y2="9.01" /><line x1="15.15" y1="8.16" x2="17.45" y2="5.52" /><line x1="16.54" y1="3.82" x2="19.26" y2="6.18" strokeWidth="3.6" />
       </svg>
     ),
     title: 'ฉีดวัคซีน',
@@ -29,17 +29,8 @@ const services: ServiceCard[] = [
         <rect x="4" y="3" width="16" height="18" rx="2" /><path d="M9 8h6M9 12h6M9 16h4" />
       </svg>
     ),
-    title: 'ตรวจสุขภาพประจำปี',
-    description: 'แพ็กเกจตรวจสุขภาพพื้นฐาน พร้อมอ่านผลและให้คำแนะนำ',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--hw-mint-700)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 12h4l2-8 4 16 2-8h6" />
-      </svg>
-    ),
-    title: 'ตรวจแล็บพื้นฐาน',
-    description: 'เจาะเลือด ตรวจปัสสาวะ และตรวจคัดกรองโรคเบื้องต้น',
+    title: 'ตรวจสุขภาพ',
+    description: 'ตรวจสุขภาพประจำปี เจาะเลือด ตรวจปัสสาวะ และตรวจคัดกรองโรคเบื้องต้น พร้อมอ่านผลและให้คำแนะนำ',
   },
   {
     icon: (
@@ -57,7 +48,7 @@ const services: ServiceCard[] = [
       </svg>
     ),
     title: 'ดูแลผู้สูงอายุ',
-    description: 'ติดตามโรคเรื้อรัง ความดัน เบาหวาน และเยี่ยมบ้านเมื่อจำเป็น',
+    description: 'ติดตามโรคเรื้อรัง ความดัน เบาหวาน ให้บริการดูแลผู้สูงอายุที่บ้าน',
   },
   {
     icon: (
@@ -92,8 +83,8 @@ const services: ServiceCard[] = [
         <path d="M14 3v5h5" /><path d="M6 3h8l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" /><path d="M9 13h6M9 17h4" />
       </svg>
     ),
-    title: 'ใบรับรองแพทย์ และส่งต่อโรงพยาบาล',
-    description: 'ออกใบรับรองแพทย์ พร้อมระบบส่งต่อเมื่อจำเป็นต้องรักษาต่อ',
+    title: 'ใบรับรองแพทย์',
+    description: 'ออกใบรับรองแพทย์ เช่น ใบขับขี่ สมัครงาน ตรวจสารเสพติด',
   },
 ]
 
@@ -112,7 +103,7 @@ export default function ServicesSection() {
             ดูแลตั้งแต่อาการเล็กน้อยถึงสุขภาพระยะยาว
           </h2>
           <p style={{ color: 'var(--hw-ink-soft)', fontSize: '15px', marginTop: '10px' }}>
-            ทีมแพทย์ตรวจวินิจฉัยและให้คำแนะนำอย่างใกล้ชิด พร้อมส่งต่อโรงพยาบาลเมื่อจำเป็น
+            ทีมแพทย์ตรวจวินิจฉัยและให้คำแนะนำอย่างใกล้ชิด
           </p>
         </div>
 

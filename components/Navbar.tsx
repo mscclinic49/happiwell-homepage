@@ -93,7 +93,7 @@ export default function Navbar() {
             <svg viewBox="0 0 24 24" width="16" height="16" fill="#fff">
               <circle cx="12" cy="12" r="12" />
             </svg>
-            LINE @p49clinic
+            แชท LINE
           </a>
         </div>
       </nav>

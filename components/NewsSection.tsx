@@ -12,7 +12,7 @@ type NewsCard = {
 
 const news: NewsCard[] = [
   {
-    category: 'ข่าวประกาศสำคัญ',
+    category: 'ข่าวประชาสัมพันธ์',
     categoryColor: 'var(--hw-mint-700)',
     categoryBg: 'var(--hw-mint-100)',
     thumbBg: 'var(--hw-mint-100)',
@@ -47,8 +47,8 @@ const news: NewsCard[] = [
     categoryBg: 'var(--hw-teal-100)',
     thumbBg: 'var(--hw-teal-100)',
     thumbIconColor: 'var(--hw-teal-700)',
-    title: 'สังเกตอาการเตือนที่ไม่เด่นชัดของเลือดออกในสมอง',
-    description: 'สัญญาณเตือนที่ไม่ควรมองข้าม และควรมาพบแพทย์เมื่อไร',
+    title: 'สังเกตอาการไข้เลือดออกในเด็กช่วงหน้าฝน',
+    description: 'สัญญาณเตือนที่พ่อแม่ควรรู้ และควรพาลูกมาพบแพทย์เมื่อไร',
     date: '28 มิ.ย. 2569',
     icon: (
       <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--hw-teal-700)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -70,7 +70,7 @@ export default function NewsSection() {
             ข่าวสารจากคลินิก
           </div>
           <h2 style={{ fontSize: '28px', fontWeight: 700, marginTop: '8px' }}>
-            ข่าวประกาศสำคัญ โปรโมชั่น และบทความสุขภาพ
+            ข่าวประชาสัมพันธ์ โปรโมชั่น และบทความสุขภาพ
           </h2>
         </div>
 

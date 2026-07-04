@@ -54,7 +54,20 @@ export default function InsuranceSection() {
           }}>
             <h3 style={{ fontSize: '17px', marginBottom: '8px' }}>ประกันสังคม</h3>
             <p style={{ fontSize: '13.5px', color: 'var(--hw-ink-soft)' }}>
-              สำหรับผู้ประกันตนที่ลงทะเบียนสถานพยาบาลไว้กับคลินิก
+              ผู้ประกันตนสามารถใช้บริการได้โดยไม่ต้องสำรองจ่าย ตั้งแต่วันที่ 1 มกราคม 2570
+            </p>
+          </div>
+
+          {/* ประกันเอกชน */}
+          <div style={{
+            borderRadius: 'var(--hw-radius-md)',
+            padding: '24px',
+            border: '1px solid var(--hw-line)',
+            background: 'var(--hw-surface)',
+          }}>
+            <h3 style={{ fontSize: '17px', marginBottom: '8px' }}>ประกันเอกชน</h3>
+            <p style={{ fontSize: '13.5px', color: 'var(--hw-ink-soft)' }}>
+              อยู่ระหว่างเจรจากับบริษัทประกัน
             </p>
           </div>
 
@@ -67,7 +80,7 @@ export default function InsuranceSection() {
           }}>
             <h3 style={{ fontSize: '17px', marginBottom: '8px' }}>ชำระเงินสด</h3>
             <p style={{ fontSize: '13.5px', color: 'var(--hw-ink-soft)' }}>
-              สำหรับผู้ที่ไม่มีสิทธิข้างต้น หรือต้องการเข้ารับบริการนอกเวลาสิทธิ
+              สำหรับสิทธิอื่นๆ สามารถขอรับใบรับรองแพทย์และใบเสร็จ เพื่อเบิกตรงกับหน่วยงาน
             </p>
           </div>
         </div>

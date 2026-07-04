@@ -134,7 +134,7 @@ export default function HeroSection() {
               <svg viewBox="0 0 24 24" width="17" height="17" fill="#fff">
                 <circle cx="12" cy="12" r="12" />
               </svg>
-              LINE @p49clinic
+              แชทผ่าน LINE
             </a>
 
             <a

@@ -145,7 +145,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <div style={{ fontSize: '12.5px', color: 'var(--hw-ink-soft)', marginBottom: '2px' }}>โทรศัพท์</div>
-                    <div style={{ fontSize: '14.5px', fontWeight: 600 }}>02-000-4586</div>
+                    <div style={{ fontSize: '14.5px', fontWeight: 600 }}>02-000-4586 · 088-683-7899</div>
                   </div>
                 </div>
                 {/* LINE */}
@@ -161,7 +161,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <div style={{ fontSize: '12.5px', color: 'var(--hw-ink-soft)', marginBottom: '2px' }}>LINE Official Account</div>
-                    <div style={{ fontSize: '14.5px', fontWeight: 600 }}>@happiwellclinic</div>
+                    <div style={{ fontSize: '14.5px', fontWeight: 600 }}>@p49clinic</div>
                   </div>
                 </div>
                 {/* Hours */}
