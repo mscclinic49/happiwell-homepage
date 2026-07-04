@@ -84,13 +84,15 @@ export default async function HomePage() {
         <span className="tag">เวลาทำการ</span>
         <h3>เปิดทุกวัน ยกเว้นวันหยุดนักขัตฤกษ์</h3>
         <table className="hours-table" id="hours-table">
-          <tr data-day="1"><td>จันทร์</td><td>08:00 – 18:00</td></tr>
-          <tr data-day="2"><td>อังคาร</td><td>08:00 – 18:00</td></tr>
-          <tr data-day="3"><td>พุธ</td><td>08:00 – 18:00</td></tr>
-          <tr data-day="4"><td>พฤหัสบดี</td><td>08:00 – 18:00</td></tr>
-          <tr data-day="5"><td>ศุกร์</td><td>08:00 – 18:00</td></tr>
-          <tr data-day="6"><td>เสาร์</td><td>08:00 – 12:00</td></tr>
-          <tr data-day="0"><td>อาทิตย์</td><td>08:00 – 12:00</td></tr>
+          <tbody>
+            <tr data-day="1"><td>จันทร์</td><td>08:00 – 18:00</td></tr>
+            <tr data-day="2"><td>อังคาร</td><td>08:00 – 18:00</td></tr>
+            <tr data-day="3"><td>พุธ</td><td>08:00 – 18:00</td></tr>
+            <tr data-day="4"><td>พฤหัสบดี</td><td>08:00 – 18:00</td></tr>
+            <tr data-day="5"><td>ศุกร์</td><td>08:00 – 18:00</td></tr>
+            <tr data-day="6"><td>เสาร์</td><td>08:00 – 12:00</td></tr>
+            <tr data-day="0"><td>อาทิตย์</td><td>08:00 – 12:00</td></tr>
+          </tbody>
         </table>
       </div>
       <div className="hero-card emergency-card">
@@ -305,11 +307,14 @@ export default async function HomePage() {
     <div className="contact-grid">
       <div className="map-box" style={{padding: '0', overflow: 'hidden'}}>
         <iframe
-          src="https://www.google.com/maps?q=13.648962,100.4964886&z=16&output=embed"
-          width="100%" height="320" style={{border: '0', display: 'block'}}
-          loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-          title="แผนที่ HappiWell คลินิกเวชกรรม">
-        </iframe>
+          src="https://maps.google.com/maps?q=13.648962,100.4964886&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="320"
+          style={{border: '0', display: 'block'}}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="แผนที่ HappiWell คลินิกเวชกรรม"
+        />
       </div>
       <div className="contact-card">
         <div className="contact-item">
