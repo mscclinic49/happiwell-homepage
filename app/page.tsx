@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './homepage.css';
 import StatusScript from './StatusScript';
 import { createClient } from '@/lib/supabase';
+import NewsCarouselDots from './NewsCarouselDots';
 
 export const metadata: Metadata = {
   title: 'หมอใกล้บ้าน ทุ่งครุ บางมด | แฮปปี้เวลล์ คลินิกเวชกรรม',
@@ -291,6 +292,7 @@ export default async function HomePage() {
         </div>
       </div>
     </div>
+    <div className="news-dots" id="news-dots"></div>
   </div>
 </section>
 
@@ -369,6 +371,7 @@ export default async function HomePage() {
 
 
       <StatusScript />
+      <NewsCarouselDots />
     </>
   );
 }
