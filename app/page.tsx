@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './homepage.css';
 import StatusScript from './StatusScript';
+import NewsSection from './_components/NewsSection';
 
 export const metadata: Metadata = {
   title: 'หมอใกล้บ้าน ทุ่งครุ บางมด | แฮปปี้เวลล์ คลินิกเวชกรรม',
@@ -248,49 +249,7 @@ export default function HomePage() {
   </div>
 </section>
 
-<section id="news">
-  <div className="wrap">
-    <div className="section-head">
-      <div className="eyebrow">ข่าวสารจากคลินิก</div>
-      <h2>ข่าวประชาสัมพันธ์ โปรโมชั่น และบทความสุขภาพ</h2>
-    </div>
-    <div className="news-grid">
-      <div className="news-card">
-        <div className="thumb" style={{background: 'var(--mint-100)'}}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--mint-700)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4v16l4-3h12V4H4z"/><path d="M8 9h8M8 13h5"/></svg>
-        </div>
-        <div className="body">
-          <span className="kicker" style={{background: 'var(--mint-100)', color: 'var(--mint-700)'}}>ข่าวประชาสัมพันธ์</span>
-          <h3>ปรับเวลาให้บริการช่วงเทศกาลสงกรานต์</h3>
-          <p>แจ้งเวลาทำการช่วงวันหยุดยาว พร้อมช่องทางติดต่อฉุกเฉิน</p>
-          <div className="meta"><span>1 เม.ย. 2569</span><a href="#">อ่านเพิ่มเติม →</a></div>
-        </div>
-      </div>
-      <div className="news-card">
-        <div className="thumb" style={{background: 'var(--apricot-50)'}}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v6M9 5h6"/><path d="M7 8h10l-1 12a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2L7 8z"/></svg>
-        </div>
-        <div className="body">
-          <span className="kicker" style={{background: 'var(--apricot-100)', color: '#8C1D26'}}>โปรโมชั่น</span>
-          <h3>วัคซีนไข้หวัดใหญ่ ราคาพิเศษเดือนนี้</h3>
-          <p>สำหรับผู้สูงอายุและกลุ่มเสี่ยง จองคิวล่วงหน้าผ่าน LINE</p>
-          <div className="meta"><span>ถึง 31 ก.ค. 2569</span><a href="#">อ่านเพิ่มเติม →</a></div>
-        </div>
-      </div>
-      <div className="news-card">
-        <div className="thumb" style={{background: 'var(--teal-100)'}}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal-700)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.5-2.5 2-2.5 3.5M12 17h.01"/></svg>
-        </div>
-        <div className="body">
-          <span className="kicker" style={{background: 'var(--teal-100)', color: 'var(--teal-700)'}}>บทความสุขภาพ</span>
-          <h3>สังเกตอาการไข้เลือดออกในเด็กช่วงหน้าฝน</h3>
-          <p>สัญญาณเตือนที่พ่อแม่ควรรู้ และควรพาลูกมาพบแพทย์เมื่อไร</p>
-          <div className="meta"><span>28 มิ.ย. 2569</span><a href="#">อ่านเพิ่มเติม →</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<NewsSection />
 
 <section id="contact" style={{background: 'var(--mint-50)'}}>
   <div className="wrap">
