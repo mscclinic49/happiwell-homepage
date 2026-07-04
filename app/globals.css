@@ -39,13 +39,13 @@ html {
 body {
   background: var(--hw-bg);
   color: var(--hw-ink);
-  font-family: 'IBM Plex Sans Thai', 'Noto Sans Thai', sans-serif;
+  font-family: var(--font-ibm), 'IBM Plex Sans Thai', 'Noto Sans Thai', sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3 {
-  font-family: 'Anuphan', 'IBM Plex Sans Thai', sans-serif;
+  font-family: var(--font-anuphan), 'Anuphan', 'IBM Plex Sans Thai', sans-serif;
   color: var(--hw-mint-900);
   line-height: 1.25;
 }
@@ -72,5 +72,12 @@ img, svg {
 @media (prefers-reduced-motion: reduce) {
   .hw-status-dot-open {
     animation: none;
+  }
+}
+
+/* Responsive nav links — hidden on small screens */
+@media (max-width: 840px) {
+  .hw-nav-links {
+    display: none !important;
   }
 }
